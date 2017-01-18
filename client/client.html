@@ -1,0 +1,31 @@
+<!-- This file is extracted from tutorial in CodeMentor.io -->
+<!-- The use is for only study. -->
+
+<!-- directory: client/client.html -->
+
+<head>
+  <title>Meteor Chat Application.</title>
+</head>
+
+<body>
+  <h1>Chatapp</h1>
+  {{> welcome }}
+  {{> input }}
+  {{> messages }}
+</body>
+
+<template name="welcome">
+  <p>
+    Let's chat.
+  </p>
+</template>
+
+<template name="messages">
+  {{#each messages}}
+    <strong>{{name}}:</strong> {{message}}<br>
+  {{/each}}
+</template>
+
+<template name="input">
+  <p>Message: <input type="text" id="message"></p>
+</template>
